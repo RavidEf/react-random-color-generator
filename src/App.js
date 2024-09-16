@@ -1,6 +1,6 @@
 import './App.css';
 import randomColor from 'randomcolor';
-import { React, useRef, useState } from 'react';
+import { useState } from 'react';
 
 export default function App() {
   const initialColor = randomColor();
