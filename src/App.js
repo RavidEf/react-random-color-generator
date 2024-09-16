@@ -59,10 +59,12 @@ export default function App() {
       <div
         id="buttonDiv"
         style={{
+          height: '200px',
           borderRadius: '20px',
           backgroundColor: `${color}`,
           animation: 'ease-in',
           transition: '0.75s',
+          lineHeight: '125px',
         }}
       >
         <p
@@ -71,6 +73,8 @@ export default function App() {
             alignContent: 'center',
             margin: '20px',
             padding: '20px',
+            textAlign: 'center',
+            textverticalAlign: 'center',
           }}
         >
           Generated Color: {color}
