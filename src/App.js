@@ -1,21 +1,15 @@
 import './App.css';
 import randomColor from 'randomcolor';
-import { useEffect, useState } from 'react';
-import logo from './logo.svg';
+import { useState } from 'react';
 
 export default function App() {
   const changeColor = randomColor();
-  // eslint-disable-next-line no-restricted-syntax
-
-  const [color, setColor] = useState();
+  const [color, setColor] = useState('#f2af85');
   const click = (color) => {
     setColor(color);
+    // eslint-disable-next-line no-restricted-syntax
+    document.getElementById('buttonDiv').style.backgroundColor = changeColor;
   };
-
-  useEffect(() => {
-    document.getElementsByClassName('buttonDiv').style.backgroundColor =
-      changeColor;
-  });
 
   return (
     <div
@@ -67,9 +61,12 @@ export default function App() {
       </button>
 
       <div
-        class="buttonDiv"
+        id="buttonDiv"
         style={{
           borderRadius: '20px',
+          backgroundColor: '#f2af85',
+          animation: 'ease-in',
+          transition: '1s',
         }}
       >
         <p
@@ -80,15 +77,14 @@ export default function App() {
             padding: '20px',
           }}
         >
-          Generated Color: {changeColor}
+          Generated Color: {color}
         </p>
       </div>
     </div>
   );
 }
 
-{
-  /*
+/*
       <label for="colorinput" />
       <input
         value={color}
@@ -108,4 +104,3 @@ export default function App() {
           backgroundColor: '#5e1493',
         }
       />  */
-}
