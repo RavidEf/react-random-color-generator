@@ -1,1 +1,0 @@
-# React Random Color Generator
