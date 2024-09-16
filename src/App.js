@@ -37,8 +37,8 @@ export default function App() {
         style={{
           fontSize: '15px',
           alignContent: 'center',
-          margin: '5px',
-          padding: '5px',
+          margin: '1px',
+          padding: '1px',
         }}
       >
         Click on the button below to generate a color.
@@ -56,8 +56,8 @@ export default function App() {
         name="colorinput"
         className="inputField"
         style={{
-          margin: '20px',
-          padding: '20px',
+          margin: '15px',
+          padding: '15px',
           borderRadius: '20px',
           backgroundColor: '#8cd4fa',
         }}
@@ -83,20 +83,15 @@ export default function App() {
           animation: 'ease-in',
           transition: '0.75s',
           lineHeight: '125px',
+          fontSize: '25px',
+          alignContent: 'center',
+          margin: '20px',
+          padding: '20px',
+          textAlign: 'center',
+          textverticalAlign: 'center',
         }}
       >
-        <p
-          style={{
-            fontSize: '25px',
-            alignContent: 'center',
-            margin: '20px',
-            padding: '20px',
-            textAlign: 'center',
-            textverticalAlign: 'center',
-          }}
-        >
-          Generated Color: {color}
-        </p>
+        Generated Color: {color}
       </div>
       <p
         style={{
